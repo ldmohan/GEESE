@@ -9,7 +9,7 @@ GEESE is a novel UAV based system that enables the dynamic deployment of an edge
 
 * Computing capacity and energy consumption of cloudlets
 We analyze the computational capacity to handle the task consists of detecting prime numbers within a list of available numbers.
-Prime number detection [Android Web server](https://github.com/mobile-cloud-computing/GEESE/blob/main/AndServer_With_Battery_Log.zip/ "Android Web server") and the [Java client](https://github.com/mobile-cloud-computing/GEESE/blob/main/PrimeNumberJavaClient.zip/ "Java Client")
+Prime number detection [Android Web server](https://github.com/ldmohan/GEESE/blob/main/AndServer_With_Battery_Log.zip/ "Android Web server") and the [Java client](https://github.com/ldmohan/GEESE/blob/main/PrimeNumberJavaClient.zip/ "Java Client")
 
 ### GEESE design and development ###
 
@@ -25,9 +25,9 @@ The prototype application is developed in Android version 5.0.1 and implements a
 We consider a set of 50 images in a resolution of 224x224, which are collected from the [ImageNet](http://image-net.org/ " ImageNet")
 We rely on a deep learning implementation that uses [TensorFlow](https://www.tensorflow.org/lite/ "TensorFlow") with a pre-trained and quantized [mobilenet_v1_1.0_224](https://www.tensorflow.org/lite/guide/hosted_models/ "mobilenet_v1_1.0_224") model for recognizing objects in the images.
 
-[Master Android App](https://github.com/mobile-cloud-computing/GEESE/blob/main/ImageMasterNode.zip/ "Master Android App") \
-[Worker Android App](https://github.com/mobile-cloud-computing/GEESE/blob/main/ImageRecgWorker.zip/ "Worker Android App") including the pre-trained model and the label file\
-During the experiment, the master node also works as a Wi-Fi hotspot. Workers are connected to the master using Wi-Fi. The workers' application must be executed first, and then the master application. On the master device, make a folder name "TestImages" under the root directory and put the images you want to recognize. You can test the application with this [TestImages](https://github.com/mobile-cloud-computing/GEESE/blob/main/TestImages.zip/ "TestImages") also. With the new Android versions, you may have to set the app permissions manually before running them.
+[Master Android App](https://github.com/ldmohan/GEESE/blob/main/ImageMasterNode.zip/ "Master Android App") \
+[Worker Android App](https://github.com/ldmohan/GEESE/blob/main/ImageRecgWorker.zip/ "Worker Android App") including the pre-trained model and the label file\
+During the experiment, the master node also works as a Wi-Fi hotspot. Workers are connected to the master using Wi-Fi. The workers' application must be executed first, and then the master application. On the master device, make a folder name "TestImages" under the root directory and put the images you want to recognize. You can test the application with this [TestImages](https://github.com/ldmohan/GEESE/blob/main/TestImages.zip/ "TestImages") also. With the new Android versions, you may have to set the app permissions manually before running them.
 There is a button on the master application that should be pressed to see the connected workers' IP addresses, and then the master can start sending images to the workers. 
 
 
